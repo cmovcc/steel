@@ -2,7 +2,8 @@
   "fstar_exe": "../FStar/bin/fstar.exe",
   "options": [
      "--load_cmxs", "steel",
-     "--compat_pre_typed_indexed_effects"
+     "--compat_pre_typed_indexed_effects",
+     "--z3version", "4.15.3"
   ],
   "include_dirs": [
     "lib/steel",
