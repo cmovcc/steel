@@ -12,6 +12,7 @@
         fstarPkgs = fstar.packages.${system};
         ocamlPackages = fstarPkgs.ocamlPackages;
         default = pkgs.stdenv.mkDerivation {
+          OTHERFLAGS = "--z3version 4.15.3";
           name = "steel";
           src = ./.;
           nativeBuildInputs = [
